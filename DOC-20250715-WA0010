@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One World, One Plate</title>
+  <style>
+    body {
+      background-color: lightpink;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: darkred;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: darkblue;
+    }
+
+    header {
+      font-size: 18px;
+      padding: 15px;
+      color: #333;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: darkgreen;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+    }
+
+    .button-link:hover {
+      background-color: #ff1493;
+    }
+
+    marquee {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><b>Flavors United</b></h1>
+
+  <marquee><h2>Welcome to Flavors United.</h2></marquee>
+
+  <marquee behavior="right" direction="right" scrollamount="5"></marquee>
+  <h1> 🌍 Taste the world in just a plate! 🍽️
+  </h1> 
+
+  <header>
+    Where we serve food from different parts of the world. We have Chinese, European, and all Nigerian dishes made by chefs from around the globe.
+  </header>
+
+  <h3>Which dish would you like to devour?</h3>
+<p><strong>Here are some delicious meal from Chinese</p></strong>
+<a class="button-link" href="Chat gpt.html">Chinese food </a>
+  
+  
+  
+  
+  
+  <a class="button-link" href="About us.html">About Us</a>
+  <a class="button-link" href="Contact us.html">Contact Us</a>
+</body>
+</html>

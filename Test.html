@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 50px;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1ebe57;
+    }
+  </style>
+
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+      var phone = "2349139942148"; // Your WhatsApp number
+
+      var url = "https://wa.me/" + phone + "?text=" +
+                encodeURIComponent("Name: " + name + "\nMessage: " + message);
+
+      window.open(url, "_blank");
+      return false; // Prevent default form submit
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Contact Us on WhatsApp</h2>
+  <form onsubmit="return sendToWhatsApp()">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</body>
+</html>
