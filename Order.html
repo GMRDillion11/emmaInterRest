@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <meta charset="UTF-8"/>
- <meta name="viewport" content="width=device width,initial-scale=1.0" />
-  <title>Place your order</title>
-<style>
-
-  body {
-
-    
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+  <meta charset="UTF-8">
+  <title>Place Your Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+   
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       min-height: 100vh;
-      padding: 40px 20px;
-    }  
-    p, li {
-      color: black;
-      margin-top: 10px;
-      font-size: 20px;
-      background-color: white;
-      </body>
-  </style>
-    <label for="message">Your message:</label>
-    <textarea id="message" name="message" rows="5" placeholder="paste your order here..." required></textarea>
+    }
 
-    <button type="submit">Paste Order</button>
-  
-  <h4><strong>make your payments in the following account below and share your receipt to this whatsapp number 09139942148</strong></h4>
-  <p><li>2353812509</li></p>
-  <p><li>NAME:Emmanuel uzor</li></p>
-  <p><li>BANK:UBA</li></p>
-  <body style="background-color: pink;">
-  
+    .order-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 500px;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ff8800;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e07000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="order-container">
+    <h2>🍽 Place Your Order</h2>
+
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+234...">
+
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" name="address" required placeholder="Enter your delivery address">
+
+      <label for="message">Enter Cuisine:</label>
+      <textarea id="message" name="message" rows="4" placeholder="E.g. No pepper, extra meat, call before delivery..."></textarea>
+
+      <button type="submit">✅ Submit Order</button>
+    </form>
+  </div>
+      <body style="background-color: brown;">
+</body>
+</html>
